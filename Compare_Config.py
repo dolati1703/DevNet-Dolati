@@ -22,7 +22,7 @@ port=5000
 file=open("routers")
 for IP in file:
 	IP = IP.strip()
-	print("Get running-config from Router " + (IP) +":"+ str(port))
+	print("Geting running-config from Router " + (IP) +":"+ str(port))
 	HOST = IP
 	tn = telnetlib.Telnet(HOST,port)
 	write_terminal(tn,"show run \r\n")
